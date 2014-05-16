@@ -23,7 +23,8 @@ class LightSensor(object):
         # This takes about 1 millisecond per loop cycle
         while(GPIO.input(self.RCpin) == GPIO.LOW):
                 reading += 1
-        if reading < 350:
+                print reading
+        if reading < 10:
            return True
         else:
            return False
