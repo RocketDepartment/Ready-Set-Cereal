@@ -1,10 +1,7 @@
 import MySQLdb
 import time
 
-db = MySQLdb.connect(host="leaflr.com",
-                     user="rsc",
-                     passwd="g00dbyeworld!",
-                     db="rsc")
+db = MySQLdb.connect()
 
 cur = db.cursor()
 
